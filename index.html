@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grupos de WhatsApp — EMEF Rosalina Borges</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f2f8ed;color:#103f6b;font-family:Arial,Helvetica,sans-serif}
+.wrap{max-width:1050px;margin:0 auto;padding:14px 16px 40px}
+.hero{background:#fff;border-radius:28px;padding:28px 20px 27px;text-align:center;box-shadow:0 10px 28px rgba(25,55,25,.10);margin-bottom:38px}
+.logo{width:120px;height:120px;object-fit:contain;display:block;margin:0 auto 10px}
+h1{font-size:48px;margin:0 0 10px;font-weight:800}.school{font-weight:700;color:#102d4a;font-size:17px;margin-bottom:4px}.hint{font-size:17px;color:#203d58}
+.search{width:100%;height:58px;border:2px solid #d7e2d2;border-radius:16px;background:#fff;padding:0 20px;font-size:17px;outline:none;margin-bottom:18px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.filter{border:0;background:#fff;color:#103f6b;border-radius:22px;padding:11px 17px;font-weight:700;box-shadow:0 4px 12px rgba(0,0,0,.07);cursor:pointer}
+.filter.active{background:#173f68;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#fff;border-radius:19px;padding:18px;box-shadow:0 7px 18px rgba(35,65,35,.10);min-height:198px;display:flex;flex-direction:column}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.turno,.sala{font-size:13px;font-weight:700;padding:7px 10px;border-radius:20px}.turno{background:#e7f4e8;color:#19723c}.sala{background:#fff0c5;color:#896300}
+h3{font-size:22px;margin:0 0 8px;color:#103f6b}.card p{font-size:16px;color:#142d45;margin:0 0 16px}
+.join{margin-top:auto;background:#20d368;color:white;text-decoration:none;text-align:center;font-weight:800;border-radius:11px;padding:14px 8px;font-size:14px}
+.empty{display:none;text-align:center;background:white;border-radius:16px;padding:30px;color:#5e7080}
+@media(max-width:800px){h1{font-size:38px}.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.wrap{padding:10px 12px 30px}.hero{border-radius:22px;padding:24px 14px 22px;margin-bottom:24px}.logo{width:100px;height:100px}h1{font-size:31px}.hint{font-size:15px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+<img src="logo.png" alt="Logo EMEF Rosalina Borges" class="logo">
+<h1>Grupos de WhatsApp</h1>
+<div class="school">EMEF Rosalina Borges</div>
+<div class="hint">Encontre a turma do seu filho(a) e clique em <b>ENTRAR NO GRUPO.</b></div>
+</header>
+<input id="search" class="search" type="search" placeholder="🔎  Digite a turma, professora ou sala..." aria-label="Pesquisar turma, professora ou sala">
+<div class="filters">
+<button class="filter active" data-filter="Todos">Todos</button>
+<button class="filter" data-filter="Infantil IV">Infantil IV</button>
+<button class="filter" data-filter="Infantil V">Infantil V</button>
+<button class="filter" data-filter="1º Ano">1º Ano</button>
+<button class="filter" data-filter="2º Ano">2º Ano</button>
+<button class="filter" data-filter="3º Ano">3º Ano</button>
+<button class="filter" data-filter="4º Ano">4º Ano</button>
+<button class="filter" data-filter="5º Ano">5º Ano</button>
+<button class="filter" data-filter="Intensivo">Intensivo</button>
+</div>
+<main id="grid" class="grid">
+<article class="card" data-cat="Infantil IV" data-search="infantil iv a sala 01 prof.ª luciana lima vespertino"><div class="top"><span class="turno">Vespertino</span><span class="sala">Sala 01</span></div><h3>Infantil IV A</h3><p>Prof.ª Luciana Lima</p><a class="join" href="https://chat.whatsapp.com/HG10TzjBn6VEvQOvZ36Xxm" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="Infantil IV" data-search="infantil iv b sala 05 prof.ª fernanda vespertino"><div class="top"><span class="turno">Vespertino</span><span class="sala">Sala 05</span></div><h3>Infantil IV B</h3><p>Prof.ª Fernanda</p><a class="join" href="https://chat.whatsapp.com/KSLyWYaAMfJ9gFEoiRy9p0" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="Infantil IV" data-search="infantil iv c sala 06 prof.ª glauciene vespertino"><div class="top"><span class="turno">Vespertino</span><span class="sala">Sala 06</span></div><h3>Infantil IV C</h3><p>Prof.ª Glauciene</p><a class="join" href="https://chat.whatsapp.com/Edp75ZUfcoJIMDOetgUfqe" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="Infantil IV" data-search="infantil iv d sala 11 prof.ª ana carolina vespertino"><div class="top"><span class="turno">Vespertino</span><span class="sala">Sala 11</span></div><h3>Infantil IV D</h3><p>Prof.ª Ana Carolina</p><a class="join" href="https://chat.whatsapp.com/CyKPvTcwPml65obbv90jbv" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="Infantil V" data-search="infantil v a sala 02 prof.ª cleidiana vespertino"><div class="top"><span class="turno">Vespertino</span><span class="sala">Sala 02</span></div><h3>Infantil V A</h3><p>Prof.ª Cleidiana</p><a class="join" href="https://chat.whatsapp.com/Jq80iB6BTR5BuTBNfe0YuP" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="Infantil V" data-search="infantil v b sala 03 prof.ª nayane vespertino"><div class="top"><span class="turno">Vespertino</span><span class="sala">Sala 03</span></div><h3>Infantil V B</h3><p>Prof.ª Nayane</p><a class="join" href="https://chat.whatsapp.com/G9b7pDHZN8s4oLjajevJgj" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="Infantil V" data-search="infantil v c sala 04 prof.ª jeanne vespertino"><div class="top"><span class="turno">Vespertino</span><span class="sala">Sala 04</span></div><h3>Infantil V C</h3><p>Prof.ª Jeanne</p><a class="join" href="https://chat.whatsapp.com/LSFlRqWLmrxCHjTZ7Cwskw" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="Infantil V" data-search="infantil v d sala 07 prof.ª kátia vespertino"><div class="top"><span class="turno">Vespertino</span><span class="sala">Sala 07</span></div><h3>Infantil V D</h3><p>Prof.ª Kátia</p><a class="join" href="https://chat.whatsapp.com/DMyJ6wh6pjBDfEtTPtq61o" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="Infantil V" data-search="infantil v e sala 08 prof.ª sueli vespertino"><div class="top"><span class="turno">Vespertino</span><span class="sala">Sala 08</span></div><h3>Infantil V E</h3><p>Prof.ª Sueli</p><a class="join" href="https://chat.whatsapp.com/JPwNdcHnqGe3aPPg5ZATlA" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="1º Ano" data-search="1º ano a sala 09 prof.ª jakeline vespertino"><div class="top"><span class="turno">Vespertino</span><span class="sala">Sala 09</span></div><h3>1º Ano A</h3><p>Prof.ª Jakeline</p><a class="join" href="https://chat.whatsapp.com/FqFenD9JNde2eXx0wr1EEi" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="1º Ano" data-search="1º ano b sala 10 prof.ª fabiane vespertino"><div class="top"><span class="turno">Vespertino</span><span class="sala">Sala 10</span></div><h3>1º Ano B</h3><p>Prof.ª Fabiane</p><a class="join" href="https://chat.whatsapp.com/B9w1JJr2gd3KAibpebqWiW" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="1º Ano" data-search="1º ano d modular 03 prof.ª elina vespertino"><div class="top"><span class="turno">Vespertino</span><span class="sala">Modular 03</span></div><h3>1º Ano D</h3><p>Prof.ª Elina</p><a class="join" href="https://chat.whatsapp.com/DUgUJ5O205SFriRkGR7J7U" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="2º Ano" data-search="2º ano a modular 01 prof.ª luciana rinaldi matutino"><div class="top"><span class="turno">Matutino</span><span class="sala">Modular 01</span></div><h3>2º Ano A</h3><p>Prof.ª Luciana Rinaldi</p><a class="join" href="https://chat.whatsapp.com/E302FEHJNts6qkUOYWC0g7" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="2º Ano" data-search="2º ano b modular 02 prof.ª cleidiana matutino"><div class="top"><span class="turno">Matutino</span><span class="sala">Modular 02</span></div><h3>2º Ano B</h3><p>Prof.ª Cleidiana</p><a class="join" href="https://chat.whatsapp.com/HWtfBQtsVu53Mp37YVk41e" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="2º Ano" data-search="2º ano c modular 01 prof.ª liduína vespertino"><div class="top"><span class="turno">Vespertino</span><span class="sala">Modular 01</span></div><h3>2º Ano C</h3><p>Prof.ª Liduína</p><a class="join" href="https://chat.whatsapp.com/HTuVK41dfsbDi1ozbdJhvd" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="2º Ano" data-search="2º ano d sala 02 prof.ª elionice vespertino"><div class="top"><span class="turno">Vespertino</span><span class="sala">Sala 02</span></div><h3>2º Ano D</h3><p>Prof.ª Elionice</p><a class="join" href="https://chat.whatsapp.com/LNpECoD9v39CnmhbbHuyv1" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="3º Ano" data-search="3º ano a sala 05 prof.ª leila matutino"><div class="top"><span class="turno">Matutino</span><span class="sala">Sala 05</span></div><h3>3º Ano A</h3><p>Prof.ª Leila</p><a class="join" href="https://chat.whatsapp.com/BhBS6QYiWqw5tAkrn9FiuG" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="3º Ano" data-search="3º ano b sala 11 prof.ª francinere matutino"><div class="top"><span class="turno">Matutino</span><span class="sala">Sala 11</span></div><h3>3º Ano B</h3><p>Prof.ª Francinere</p><a class="join" href="https://chat.whatsapp.com/D5cU4fW0g0RA1zn2lTgda5" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="3º Ano" data-search="3º ano c sala 04 prof.ª viviane matutino"><div class="top"><span class="turno">Matutino</span><span class="sala">Sala 04</span></div><h3>3º Ano C</h3><p>Prof.ª Viviane</p><a class="join" href="https://chat.whatsapp.com/JFBcToYUgOY3eH1KDfMCS2" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="3º Ano" data-search="3º ano d modular 03 prof.ª glauciene matutino"><div class="top"><span class="turno">Matutino</span><span class="sala">Modular 03</span></div><h3>3º Ano D</h3><p>Prof.ª Glauciene</p><a class="join" href="https://chat.whatsapp.com/Di6OCXITePF8pO15ofjEX7" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="4º Ano" data-search="4º ano a sala 01 prof.ª neusa matutino"><div class="top"><span class="turno">Matutino</span><span class="sala">Sala 01</span></div><h3>4º Ano A</h3><p>Prof.ª Neusa</p><a class="join" href="https://chat.whatsapp.com/KlgGpaB4jAm0mxRK52gUBv" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="4º Ano" data-search="4º ano c sala 03 prof.ª fabiana matutino"><div class="top"><span class="turno">Matutino</span><span class="sala">Sala 03</span></div><h3>4º Ano C</h3><p>Prof.ª Fabiana</p><a class="join" href="https://chat.whatsapp.com/KbtZnWG1kYyInQ7RGFy21C" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="4º Ano" data-search="4º ano d sala 02 prof.ª luciana pierazo matutino"><div class="top"><span class="turno">Matutino</span><span class="sala">Sala 02</span></div><h3>4º Ano D</h3><p>Prof.ª Luciana Pierazo</p><a class="join" href="https://chat.whatsapp.com/CowHXyrpmV4HkWv9j73QXz" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="5º Ano" data-search="5º ano a sala 08 prof.ª vanuza matutino"><div class="top"><span class="turno">Matutino</span><span class="sala">Sala 08</span></div><h3>5º Ano A</h3><p>Prof.ª Vanuza</p><a class="join" href="https://chat.whatsapp.com/CzwzDpvqjY84bJ8YCj0VDE" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="5º Ano" data-search="5º ano c sala 01 prof.ª neusa matutino"><div class="top"><span class="turno">Matutino</span><span class="sala">Sala 01</span></div><h3>5º Ano C</h3><p>Prof.ª Neusa</p><a class="join" href="https://chat.whatsapp.com/GN9FDIFVLSYI4DhWc2izjC" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="5º Ano" data-search="5º ano d sala 10 prof.ª rosely matutino"><div class="top"><span class="turno">Matutino</span><span class="sala">Sala 10</span></div><h3>5º Ano D</h3><p>Prof.ª Rosely</p><a class="join" href="https://chat.whatsapp.com/BiYcdbCStjl6tbDNB59bur" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+<article class="card" data-cat="Intensivo" data-search="intensivo i sala 07 prof.ª elionice matutino"><div class="top"><span class="turno">Matutino</span><span class="sala">Sala 07</span></div><h3>Intensivo I</h3><p>Prof.ª Elionice</p><a class="join" href="https://chat.whatsapp.com/G6VUqevD0tI7LGK5iB38vi" target="_blank" rel="noopener">☘ &nbsp; ENTRAR NO GRUPO</a></article>
+</main>
+<div id="empty" class="empty">Nenhuma turma encontrada.</div>
+</div>
+<script>
+let currentFilter="Todos";
+const cards=Array.from(document.querySelectorAll(".card"));
+const search=document.getElementById("search");
+const empty=document.getElementById("empty");
+function render(){
+ const query=search.value.toLowerCase().trim(); let visible=0;
+ cards.forEach(card=>{
+  const categoryOK=currentFilter==="Todos"||card.dataset.cat===currentFilter;
+  const searchOK=!query||card.dataset.search.includes(query);
+  const show=categoryOK&&searchOK;
+  card.style.display=show?"flex":"none"; if(show)visible++;
+ });
+ empty.style.display=visible?"none":"block";
+}
+document.querySelectorAll(".filter").forEach(button=>{
+ button.addEventListener("click",()=>{
+  document.querySelectorAll(".filter").forEach(item=>item.classList.remove("active"));
+  button.classList.add("active"); currentFilter=button.dataset.filter; render();
+ });
+});
+search.addEventListener("input",render);
+</script>
+</body>
+</html>
